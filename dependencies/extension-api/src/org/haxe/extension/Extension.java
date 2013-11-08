@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.hardware.SensorEvent;
 
 
 public class Extension {
@@ -103,6 +104,13 @@ public class Extension {
 		
 		
 		
+	}
+
+	/**
+	 * Called when the device orientation is changed
+	 */
+	public void onSensorChanged (SensorEvent event){
+
 	}
 	
 	

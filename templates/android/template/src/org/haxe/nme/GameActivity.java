@@ -481,7 +481,11 @@ public class GameActivity extends Activity implements SensorEventListener {
 		
 		NME.onDeviceOrientationUpdate (prepareDeviceOrientation ());
 		NME.onNormalOrientationFound (bufferedNormalOrientation);
-		
+
+		for (Extension extension : extensions) {
+			extension.onSensorChanged (event);
+			
+		}		
 	}
 	
 	
